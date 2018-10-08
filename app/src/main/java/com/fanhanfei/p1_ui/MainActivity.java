@@ -37,6 +37,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         Button button3 = (Button) findViewById(R.id.button3);
         Button button4 = (Button) findViewById(R.id.button4);
         Button button5 = (Button) findViewById(R.id.button5);
+        Button button6 = (Button) findViewById(R.id.button6);
         imageView = (ImageView) findViewById(R.id.image);
         progressBar = (ProgressBar)findViewById(R.id.progressBar);
 
@@ -45,6 +46,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         button3.setOnClickListener(this);
         button4.setOnClickListener(this);
         button5.setOnClickListener(this);
+        button6.setOnClickListener(this);
 
 
     }
@@ -80,6 +82,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             case R.id.button5:
                 Intent intent5 = new Intent(MainActivity.this, RecyclerViewActivity.class);
                 startActivity(intent5);
+                break;
+                case R.id.button6:
+                Intent intent6 = new Intent(MainActivity.this, LiaoTianActivity.class);
+                startActivity(intent6);
                 break;
             default:break;
 
